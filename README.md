@@ -40,9 +40,12 @@ _*Versions as of this writing. Versions are't specified anywhere so could be sou
 - The main layout does not contain any global wrapping markup layer or class. For a single page, this probably isn't an issue, but be mindful of repeating markup in other pages.
 
 ### Data
-- There is a yml file located at `_data/data.yml` that is automatically loaded into the default layout. This contains site title and description, but can be expanded to include other string-y content.
+- *There is a yml file located at `_data/data.yml` that is automatically loaded into the default layout. This contains site title and description, but can be expanded to include other string-y content.
+
+_*Intentionally not using Jekyll's default `site` variable because 1) it feels strange to mix content and config options and 2) the `github-pages` gem seems to be getting in the way (unconfirmed)._
 
 ## To-do
 - Add default favicon
 - Add a 404 page
 - Consider global wrapping div or class
+- Should probably stub out some JS stuff too
