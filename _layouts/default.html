@@ -1,11 +1,13 @@
 ---
 ---
+{%- assign data = site.data.data -%}
 <!doctype html>
 <html>
   <head>
     <meta charset="utf-8">
+    <title>{{ page.title | default: data.meta.title }}</title>
+    <meta name="description" content="{{ page.description | default: data.meta.description }}">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>TODO:: TITLE</title>
     <link rel="shortcut icon" href="/favicon.ico">
     <link rel="stylesheet" href="{{ '/assets/css/main.css' | absolute_url }}">
   </head>
